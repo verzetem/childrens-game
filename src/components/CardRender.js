@@ -1,11 +1,17 @@
 import React from 'react';
 
 
-const CardRender = () => {
+const CardRender = ({img}) => {
 
 	return (
+
 		<div>
-			<h1>Card Render</h1>
+			{img.map((image, i) => {
+				// return <img src={image[i]} />
+				for (var prop in image) {
+					return <img src={image[prop]} />
+				}
+			})}
 		</div>
 	)
 }

@@ -24,11 +24,11 @@ class App extends Component {
 
   render() {
     return (
-      
+
       <div className="App">
         <Header />
 
-        <GameBoard />
+        <GameBoard img={this.state.cardImages}/>
         <Footer />
       </div>
     );

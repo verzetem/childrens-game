@@ -1,12 +1,12 @@
 import React from 'react';
 import CardRender from './CardRender.js';
 
-const GameBoard = () => {
+const GameBoard = ({img}) => {
 
 	return (
 		<div>
 			<h1>Game Board</h1>
-			<CardRender />
+			<CardRender img={img} />
 		</div>
 	)
 }
