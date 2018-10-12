@@ -1,15 +1,32 @@
 body {
   text-align: center;
 }
+.att {
+  border-radius: 5px;
+  border: 1px solid black;
+}
 .card {
-  width: 150px;
-  height: 200px;
+  background-color: darkgray;
+  width: 200px;
+  height: 150px;
+  border: 1px solid black;
+  border-radius: 5px;
+  /*filter: brightness(0%);*/
+}
+.img {
+  visibility: hidden;
+}
+.card-front {
+  display: flex;
+}
+.card-back {
+
 }
 .gameBoard {
   display: flex;
   flex-flow: wrap;
   height: 1000px;
-  width: 1000px;
+  width: 610px;
   background-color: #999;
   margin: auto;
 }

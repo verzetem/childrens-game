@@ -1,26 +1,15 @@
 import React from 'react';
 import CardRender from './CardRender.js';
 
-const GameBoard = ({img}) => {
+const GameBoard = ({img, isChosen, selected}) => {
 
 	return (
 		<div>
-			<h1>Game Board</h1>
 			<div className="gameBoard">
-				
-						<CardRender img={img} />
-					
+				<CardRender selected={selected} isChosen={isChosen} img={img} />
 			</div>
 		</div>
 	)
 }
-
-
-
-
-
-
-
-
 
 export default GameBoard;

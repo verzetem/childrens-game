@@ -18,17 +18,16 @@ class App extends Component {
   state = {
     cardImages: [ 
       {one}, {two}, {three}, {four}, {five}, {six}, {seven}, {eight}, {nine} 
-    ]
+    ],
   }
-
-
+  isChosen = (event) => {
+    event.target.firstChild.className = "card-front"
+  }
   render() {
     return (
-
       <div className="App">
         <Header />
-
-        <GameBoard img={this.state.cardImages}/>
+        <GameBoard selected={this.state.selected} isChosen={this.isChosen} img={this.state.cardImages}/>
         <Footer />
       </div>
     );
